@@ -1,4 +1,4 @@
-<p align="center"><img src="./docs/public/stepia-3.png" alt="StepiaJS Logo"></p>
+<p align="center"><img src="./docs/public/stepia.png" alt="StepiaJS Logo"></p>
 
 <p>&nbsp;</p>
 
