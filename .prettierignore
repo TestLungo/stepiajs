@@ -1,0 +1,18 @@
+# Artifacts
+coverage
+build
+
+# Dependency directories
+**/node_modules
+
+# Git
+**/.git
+.gitignore
+.gitattributes
+
+# Logs
+logs
+
+# Ignore project files
+**/*.html
+**/*.md
