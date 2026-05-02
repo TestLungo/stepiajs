@@ -1,0 +1,17 @@
+name: CI Tests
+
+on:
+  push:
+    branches: [master, develop]
+  pull_request:
+    branches: [master, develop]
+    types: [opened, reopened, edited]
+
+jobs:
+
+  simple:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Simple pipe
+        run: echo "Simple pipe passed"
