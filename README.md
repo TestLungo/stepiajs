@@ -4,6 +4,7 @@
 
 <p align="center">
     <a href="https://github.com/TestLungo/stepiajs/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-orange.svg" alt="StepiaJS License"></a>
+    <a href="https://github.com/TestLungo/stepiajs/actions/workflows/stepia.yml"><img alt="GitHub Actions CI Status" src="https://img.shields.io/github/actions/workflow/status/TestLungo/stepiajs/stepia.yml?label=CI&logo=GitHub"></a>
 </p>
 
 <h1 align="center">StepiaJS&nbsp;&nbsp;&#x1F43E;</h1>

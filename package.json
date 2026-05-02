@@ -1,14 +1,15 @@
 {
-  "name": "stepiajs",
-  "version": "0.1.0-alpha1",
+  "name": "@stepia/monorepo",
+  "version": "0.0.0",
   "type": "module",
+  "private": true,
   "description": "Build your tests step-by-step",
-  "bin": {
-    "stepia": "bin/stepia.js"
-  },
   "directories": {
     "doc": "docs"
   },
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "pre:check": "prettier --check \"**/*.{js,jsx,cjs,mjs,ts,tsx}\"",
