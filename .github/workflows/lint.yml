@@ -1,0 +1,34 @@
+name: Lint scripts
+
+on:
+  workflow_call:
+    inputs:
+      node:
+        description: 'Node version'
+        required: false
+        type: string
+        default: '22'
+      command:
+        description: 'Lint command'
+        required: true
+        type: string
+
+
+jobs:
+
+  lint:
+    name: Lint (Prettier -> ESLint)
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: ${{ inputs.node }}
+          cache: "npm"
+      - run: npm ci
+      - name: Prettier checks
+        run: npm run prettier:${{ inputs.command }}
+      - name: ESLint checks
+        run: npm run eslint:${{ inputs.command }}

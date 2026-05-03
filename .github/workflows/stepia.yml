@@ -1,4 +1,4 @@
-name: CI Tests
+name: CI
 
 on:
   push:
@@ -6,12 +6,11 @@ on:
   pull_request:
     branches: [master, develop]
     types: [opened, reopened, edited]
+  workflow_dispatch:
 
 jobs:
 
-  simple:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Simple pipe
-        run: echo "Simple pipe passed"
+  lint:
+    uses: ./.github/workflows/lint.yml
+    with:
+      command: 'lint'

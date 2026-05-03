@@ -15,8 +15,9 @@
     "build:release": "npm run clean && npm run build",
     "clean": "rimraf packages/*/{dist,tsconfig.tsbuildinfo}",
     "eslint:lint": "eslint \"**/*.{js,jsx,cjs,mjs,ts,tsx}\"",
-    "pre:check": "prettier --check \"**/*.{js,jsx,cjs,mjs,ts,tsx}\"",
-    "pre:write": "prettier --write \"**/*.{js,jsx,cjs,mjs,ts,tsx}\"",
+    "eslint:fix": "eslint \"**/*.{js,jsx,cjs,mjs,ts,tsx}\" --fix",
+    "prettier:lint": "prettier --check \"**/*.{js,jsx,cjs,mjs,ts,tsx}\"",
+    "prettier:fix": "prettier --write \"**/*.{js,jsx,cjs,mjs,ts,tsx}\"",
     "prepare": "husky"
   },
   "repository": {
