@@ -1,0 +1,7 @@
+{
+  "files": [],
+  "references": [
+    { "path": "packages/stepia-cli" },
+    { "path": "packages/stepia-core" }
+  ]
+}
