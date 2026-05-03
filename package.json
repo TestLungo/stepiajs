@@ -18,7 +18,8 @@
     "eslint:fix": "eslint \"**/*.{js,jsx,cjs,mjs,ts,tsx}\" --fix",
     "prettier:lint": "prettier --check \"**/*.{js,jsx,cjs,mjs,ts,tsx}\"",
     "prettier:fix": "prettier --write \"**/*.{js,jsx,cjs,mjs,ts,tsx}\"",
-    "prepare": "husky"
+    "prepare": "husky",
+    "publish": "npm run build:release && npm publish --workspaces"
   },
   "repository": {
     "type": "git",
