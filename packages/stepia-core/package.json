@@ -1,13 +1,27 @@
 {
   "name": "@stepia/core",
   "version": "0.0.1",
-  "description": "",
+  "description": "Core of StepiaJS Framework",
   "type": "module",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": "./dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TestLungo/stepiajs.git",
+    "directory": "packages/stepia-core"
   },
-  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/TestLungo/stepiajs/issues"
+  },
+  "keywords": [
+    "stepiajs",
+    "stepia",
+    "testing",
+    "testing-framework",
+    "test-automation",
+    "qa-automation"
+  ],
   "author": "Ivan Boyko",
   "license": "MIT",
   "publishConfig": {
